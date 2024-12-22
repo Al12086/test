@@ -1,27 +1,28 @@
 /* Основные стили */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
-    scroll-behavior: smooth; /* Плавный скроллинг */
+    background-color: #f9f9f9; /* Нежный серый */
+    color: #4a4a4a; /* Спокойный серый для текста */
+    scroll-behavior: smooth;
 }
 
 header {
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
-    color: #fff;
-    padding: 1em 0;
+    background: linear-gradient(45deg, #a8c3e8, #b8e3d8); /* Пастельный голубой и мятный */
+    color: #ffffff;
+    padding: 1.5em 0;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    border-bottom-left-radius: 30px; /* Закругление углов */
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -30,36 +31,46 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; /* Плавный переход цвета */
+    border-bottom: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffeeba;
+    background: rgba(255, 255, 255, 0.2); /* Лёгкий полупрозрачный фон */
+    border-bottom: 2px solid #ffffff;
 }
 
 section {
     margin: 20px;
     padding: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация */
+    background: #ffffff; /* Белый фон для секций */
+    border: 1px solid #e0e0e0;
+    border-radius: 20px; /* Закругление углов */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 section:hover {
-    transform: translateY(-5px); /* Приподнимаем блок */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 footer {
     text-align: center;
-    padding: 1em 0;
-    background: #333;
-    color: #fff;
+    padding: 1.5em 0;
+    background: #4a90e2; /* Мягкий синий */
+    color: #ffffff;
+    border-top-left-radius: 30px; /* Закругление верхних углов */
+    border-top-right-radius: 30px;
+}
+
+footer p {
+    margin: 0;
 }
 
 /* Кнопка "Наверх" */
@@ -68,17 +79,28 @@ footer {
     bottom: 20px;
     right: 20px;
     display: none;
-    background: #2575fc;
-    color: #fff;
+    background: #b8e3d8; /* Пастельный мятный */
+    color: #ffffff;
     border: none;
     border-radius: 50%;
-    padding: 10px 15px;
+    padding: 15px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
     transition: background 0.3s ease;
 }
 
 #back-to-top:hover {
-    background: #6a11cb;
+    background: #9ecbb8; /* Чуть темнее для эффекта */
+}
+
+/* Дополнительные стили для ссылок */
+a {
+    color: #4a90e2; /* Спокойный синий */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #316b9e; /* Более тёмный синий */
 }
