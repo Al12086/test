@@ -1,38 +1,60 @@
 <!DOCTYPE html>
-   <html lang="ru">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Мое портфолио</title>
-       <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">ПОРТФОЛИО</div>
+        <div class="nav-links">
+            <a href="#projects">Проекты</a>
+            <a href="#about">Обо мне</a>
+            <a href="#contact">Контакты</a>
+        </div>
+    </nav>
 
-       <header>
-           <h1>Мое портфолио</h1>
-           <p>Привет! Меня зовут [Ваше имя].</p>
-       </header>
+    <section class="hero">
+        <!-- Добавляем фоновое изображение для hero секции -->
+        <div class="hero-content">
+            <h1 class="hero-title">Мои Работы</h1>
+            <p class="hero-description">
+                Добро пожаловать в мое портфолио. Здесь вы найдете коллекцию моих лучших работ и проектов.
+            </p>
+        </div>
+    </section>
 
-       <section>
-           <h2>Мои проекты</h2>
-           <div class="project">
-               <h3>Проект 1</h3>
-               <img src="project1.jpg" alt="Проект 1">
-               <p>Описание проекта 1.</p>
-           </div>
+    <section class="projects" id="projects">
+        <div class="project-grid">
+            <div class="project-card">
+                <!-- Заменяем div на img -->
+                <div class="project-image-container">
+                    <img src="./images/project1.jpg" alt="Проект 1" class="project-image">
+                </div>
+                <h3 class="project-title">Проект 1</h3>
+                <p class="project-description">Описание вашего первого проекта.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src=":\Users\KJA.CARGO2\Desktop\Klepikov\pr\images\1.jpg" alt="Проект 2" class="project-image">
+                </div>
+                <h3 class="project-title">Проект 2</h3>
+                <p class="project-description">Описание вашего второго проекта.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="./images/project3.jpg" alt="Проект 3" class="project-image">
+                </div>
+                <h3 class="project-title">Проект 3</h3>
+                <p class="project-description">Описание вашего третьего проекта.</p>
+            </div>
+        </div>
+    </section>
 
-           <div class="project">
-               <h3>Проект 2</h3>
-               <img src="project2.jpg" alt="Проект 2">
-               <p>Описание проекта 2.</p>
-           </div>
-
-           <!-- Добавьте дополнительные блоки .project для других проектов -->
-       </section>
-
-       <footer>
-           <p>&copy; 2023 [Ваше имя]. Все права защищены.</p>
-       </footer>
-
-   </body>
-   </html>
+    <footer class="footer">
+        <!-- Остальной код футера остается без изменений -->
+    </footer>
+</body>
+</html>
