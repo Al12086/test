@@ -5,56 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="logo">ПОРТФОЛИО</div>
-        <div class="nav-links">
-            <a href="#projects">Проекты</a>
-            <a href="#about">Обо мне</a>
-            <a href="#contact">Контакты</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">ПОРТФОЛИО</span>
+                <div class="logo-bar"></div>
+            </div>
+            <div class="nav-links">
+                <a href="#projects" class="nav-link"><span>Проекты</span></a>
+                <a href="#about" class="nav-link"><span>Обо мне</span></a>
+                <a href="#contact" class="nav-link"><span>Контакты</span></a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
     <section class="hero">
-        <!-- Добавляем фоновое изображение для hero секции -->
         <div class="hero-content">
             <h1 class="hero-title">Мои Работы</h1>
+            <div class="hero-line"></div>
             <p class="hero-description">
                 Добро пожаловать в мое портфолио. Здесь вы найдете коллекцию моих лучших работ и проектов.
             </p>
+            <a href="#projects" class="cta-button">Смотреть проекты</a>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-icon">
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
     </section>
 
     <section class="projects" id="projects">
+        <h2 class="section-title">Проекты</h2>
         <div class="project-grid">
             <div class="project-card">
-                <!-- Заменяем div на img -->
-                <div class="project-image-container">
-                    <img src="./images/project1.jpg" alt="Проект 1" class="project-image">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <h3 class="project-title">Проект 1</h3>
                 <p class="project-description">Описание вашего первого проекта.</p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
             </div>
             <div class="project-card">
-                <div class="project-image-container">
-                    <img src=":\Users\KJA.CARGO2\Desktop\Klepikov\pr\images\1.jpg" alt="Проект 2" class="project-image">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <h3 class="project-title">Проект 2</h3>
                 <p class="project-description">Описание вашего второго проекта.</p>
+                <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                </div>
             </div>
             <div class="project-card">
-                <div class="project-image-container">
-                    <img src="./images/project3.jpg" alt="Проект 3" class="project-image">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <h3 class="project-title">Проект 3</h3>
                 <p class="project-description">Описание вашего третьего проекта.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Django</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <!-- Остальной код футера остается без изменений -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>your@email.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+7 (999) 123-45-67</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Адрес</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <p>Город, Улица,</p>
+                        <p>Дом 123</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ваше Имя. Все права защищены.</p>
+        </div>
     </footer>
 </body>
 </html>
