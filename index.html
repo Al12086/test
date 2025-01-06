@@ -43,53 +43,148 @@
         </div>
     </section>
 
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <i class="fas fa-code"></i>
+                <span class="stat-number" data-target="15000">0</span>
+                <span class="stat-label">Строк кода</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-project-diagram"></i>
+                <span class="stat-number" data-target="25">0</span>
+                <span class="stat-label">Проектов</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <span class="stat-number" data-target="50">0</span>
+                <span class="stat-label">Клиентов</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-award"></i>
+                <span class="stat-number" data-target="10">0</span>
+                <span class="stat-label">Наград</span>
+            </div>
+        </div>
+    </section>
+
     <section class="projects" id="projects">
         <h2 class="section-title">Проекты</h2>
         <div class="project-grid">
             <div class="project-card">
                 <div class="project-image">
+                    <img src="/api/placeholder/800/600" alt="E-commerce Dashboard">
                     <div class="project-overlay">
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="Посмотреть демо">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" title="GitHub репозиторий">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <h3 class="project-title">Проект 1</h3>
-                <p class="project-description">Описание вашего первого проекта.</p>
-                <div class="project-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JavaScript</span>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <div class="project-overlay">
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-                <h3 class="project-title">Проект 2</h3>
-                <p class="project-description">Описание вашего второго проекта.</p>
+                <h3 class="project-title">E-commerce Dashboard</h3>
+                <p class="project-description">
+                    Современная панель управления для онлайн-магазина с аналитикой продаж, 
+                    управлением товарами и интеграцией платежных систем.
+                </p>
                 <div class="project-tags">
                     <span class="tag">React</span>
+                    <span class="tag">Redux</span>
                     <span class="tag">Node.js</span>
                 </div>
             </div>
+
             <div class="project-card">
                 <div class="project-image">
+                    <img src="/api/placeholder/800/600" alt="Фитнес-приложение">
                     <div class="project-overlay">
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="Посмотреть демо">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" title="GitHub репозиторий">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <h3 class="project-title">Проект 3</h3>
-                <p class="project-description">Описание вашего третьего проекта.</p>
+                <h3 class="project-title">Fitness Tracker Pro</h3>
+                <p class="project-description">
+                    Мобильное приложение для отслеживания тренировок с персонализированными 
+                    планами и интеграцией с фитнес-устройствами.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">React Native</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">GraphQL</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="/api/placeholder/800/600" alt="AI Chat Bot">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="Посмотреть демо">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" title="GitHub репозиторий">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="project-title">Smart AI Assistant</h3>
+                <p class="project-description">
+                    Интеллектуальный чат-бот для поддержки клиентов с использованием 
+                    машинного обучения.
+                </p>
                 <div class="project-tags">
                     <span class="tag">Python</span>
-                    <span class="tag">Django</span>
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">FastAPI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title">Обо мне</h2>
+                <p class="about-text">
+                    Я - профессиональный веб-разработчик с опытом создания современных и 
+                    эффективных веб-приложений. Мой подход сочетает креативность с 
+                    техническим совершенством.
+                </p>
+                <div class="skills">
+                    <div class="skill-item">
+                        <span class="skill-label">HTML/CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">React</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -130,9 +225,10 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Ваше Имя. Все права защищены.</p>
+            <p>&copy; 2024 Алексей Клепиков. Все права защищены.</p>
         </div>
     </footer>
+
     <script src="./script.js"></script>
 </body>
 </html>
